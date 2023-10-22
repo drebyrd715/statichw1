@@ -9,9 +9,6 @@ class Person {
 class Governor extends Person { 
     constructor(name, age, hairColor, state) {
         super(name, age, hairColor,)
-        this.name = name
-        this.age = age
-        this.hairColor = hairColor
         this.state = state
     }
     
@@ -31,9 +28,6 @@ const Gov1 = new Governor("Dre", 52, "grey", "Pennsylvania")
 class PostalWorker extends Person {
     constructor(name, age, hairColor, longHours) {
        super (name, age, hairColor)
-       this.name = name
-       this.age = age
-       this.hairColor = hairColor
        this.longHours = longHours
         
     }
@@ -52,12 +46,16 @@ class PostalWorker extends Person {
 // worker1.greeting()
 // console.log(worker1.hairColor)
 
+const worker2 = new PostalWorker("Fried Chicken", 82, "white", 72)
+      
+console.log(worker2)
+worker2.steal()
+worker2.greeting()
+console.log(worker2.hairColor)
+
 class Chef extends Person {
     constructor(name, age, hairColor, specialSause) {
         super (name, age, hairColor) 
-        this.name = name
-        this.age = age
-        this.hairColor = hairColor
         this. specialSause = specialSause
     }
     season() {
@@ -70,7 +68,14 @@ class Chef extends Person {
 
 const privateCook = new Chef ("Jarrod", 18, "black", "Grandma's Sause")
 
-console.log(privateCook)
-console.log(privateCook.specialSause)
-privateCook.season()
-privateCook.tasttest()
+// console.log(privateCook)
+// console.log(privateCook.specialSause)
+// privateCook.season()
+// privateCook.tasttest()
+
+const privateCook2 = new Chef ("Alex", 23, "grey", "It's a Secret")
+
+console.log(privateCook2)
+console.log(privateCook2.specialSause)
+privateCook2.season()
+privateCook2.tasttest()
