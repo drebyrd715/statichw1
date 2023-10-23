@@ -1,3 +1,19 @@
+class Governor {
+    static hairstyle = 'clean cut';
+    static slogan = 'Vote for me!';
+    static greet() {
+        console.log('Hello people of this fine city');
+    }
+    static dramaticWave() {
+        console.log('*Waves Dramatically*');
+    }
+}
+// console.log(Governor.hairstyle);
+// console.log(Governor.slogan);
+// Governor.greet();
+// Governor.dramaticWave();
+
+
 class Person {
     constructor(name, age, hairColor,) {
         this.name = name
@@ -6,24 +22,6 @@ class Person {
     }
 
 }
-class Governor extends Person { 
-    constructor(name, age, hairColor, state) {
-        super(name, age, hairColor,)
-        this.state = state
-    }
-    
-    static hairColors() {
-        return ["green", "pink", "grey"];
-      }
-    static state = true
-    
-static state(){console.log("Show Authority")}
-
-}
-const Gov1 = new Governor("Dre", 52, "grey", "Pennsylvania")
-// console.log(Gov1.state)
-// console.log(Gov1)
-
 
 class PostalWorker extends Person {
     constructor(name, age, hairColor, longHours) {
@@ -48,10 +46,10 @@ class PostalWorker extends Person {
 
 const worker2 = new PostalWorker("Fried Chicken", 82, "white", 72)
       
-console.log(worker2)
-worker2.steal()
-worker2.greeting()
-console.log(worker2.hairColor)
+// console.log(worker2)
+// worker2.steal()
+// worker2.greeting()
+// console.log(worker2.hairColor)
 
 class Chef extends Person {
     constructor(name, age, hairColor, specialSause) {
@@ -75,7 +73,7 @@ const privateCook = new Chef ("Jarrod", 18, "black", "Grandma's Sause")
 
 const privateCook2 = new Chef ("Alex", 23, "grey", "It's a Secret")
 
-console.log(privateCook2)
-console.log(privateCook2.specialSause)
-privateCook2.season()
-privateCook2.tasttest()
+// console.log(privateCook2)
+// console.log(privateCook2.specialSause)
+// privateCook2.season()
+// privateCook2.tasttest()
